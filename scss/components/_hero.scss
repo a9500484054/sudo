@@ -51,15 +51,15 @@
     min-height: 582px;
     margin-bottom: 50px;
     &--1 {
-        background-image: url('/images/jpg/bg_main-2.jpg');
+        background-image: url('./images/jpg/bg_main-2.jpg');
         background-repeat: no-repeat;
     }
     &--2 {
-        background-image: url('/images/jpg/bg_main-3.jpg');
+        background-image: url('./images/jpg/bg_main-3.jpg');
         background-repeat: no-repeat;
     }
     &--3 {
-        background-image: url('/images/jpg/bg_main-4.jpg');
+        background-image: url('.../images/jpg/bg_main-4.jpg');
         background-repeat: no-repeat;
     }
 
@@ -148,7 +148,7 @@
 }
 
 .index-benefits {
-    background-image: url('/images/jpg/bg_main-5.jpg');
+    background-image: url('../images/jpg/bg_main-5.jpg');
     background-repeat: no-repeat;
     background-size: 190% 391px;
     background-position: -211px 75px;
@@ -208,7 +208,7 @@
                 width: 90px;
                 height: 90px;
     
-                background-image: url('/images/png/mask-1.png');
+                background-image: url('./images/png/mask-1.png');
             }
         }
         &:nth-child(2) {
@@ -216,7 +216,7 @@
                 width: 80px;
                 height: 80px;
     
-                background-image: url('/images/png/mask-2.png');
+                background-image: url('./images/png/mask-2.png');
             }
     
         }
@@ -225,7 +225,7 @@
                 width: 72px;
                 height: 72px;
     
-                background-image: url('/images/png/mask-3.png');
+                background-image: url('./images/png/mask-3.png');
             }
     
         }
