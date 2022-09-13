@@ -1,0 +1,59 @@
+.publications {
+    min-height: 500px;
+    background-image: url('/images/jpg/bg_publicationspg.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 0 80px;
+
+
+    &__block {
+        div {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    &__text {
+        max-width: 406px;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 137%;
+        /* or 27px */
+
+        letter-spacing: 0.02em;
+
+        color: #171616;
+    }
+    &__box {
+        display: flex;
+        flex-direction: column;
+        ul {
+            margin-bottom: 20px;
+        }
+    }
+}
+
+@media (min-width: $screen-table) { 
+    .publications {
+        background-position: 50% 0;
+        background-size: 100% 505px;
+        &__block {
+            div:first-child {
+                flex-basis: 30%;
+                justify-content: center;
+            }
+            div:last-child {
+                flex-basis: 70%;
+                height: 376px;
+            }
+        }
+    }
+}
+    
+    
+@media (min-width: $screen-desktop) {
+
+}
+
+.jc-sta div:first-child {
+    justify-content: flex-start;
+}
