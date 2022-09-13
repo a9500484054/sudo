@@ -723,7 +723,7 @@ input[type="radio"].visually-hidden {
 }
 
 .hero {
-  background-image: url("/images/jpg/bg_main-1.jpg");
+  background-image: url("./images/jpg/bg_main-1.jpg");
   background-size: 1287px;
   background-repeat: no-repeat;
   padding: 100px 0;
@@ -979,7 +979,7 @@ input[type="radio"].visually-hidden {
 }
 
 .services {
-  background-image: url("/images/jpg/bg_services.jpg");
+  background-image: url("./images/jpg/bg_services.jpg");
   background-repeat: no-repeat;
   background-position: -575px 0;
 }
@@ -1176,7 +1176,7 @@ input[type="radio"].visually-hidden {
 }
 
 .about {
-  background-image: url("/images/jpg/bg_about.jpg");
+  background-image: url("./images/jpg/bg_about.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: 0 327px;
@@ -1237,7 +1237,7 @@ input[type="radio"].visually-hidden {
 }
 
 .career {
-  background-image: url("/images/jpg/bg_career.jpg");
+  background-image: url("./images/jpg/bg_career.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: 0 327px;
@@ -1304,7 +1304,7 @@ input[type="radio"].visually-hidden {
 }
 
 .reviews {
-  background-image: url("/images/jpg/bg_reviews.jpg");
+  background-image: url("./images/jpg/bg_reviews.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: 0 327px;
@@ -1507,7 +1507,7 @@ input[type="radio"].visually-hidden {
 
 .publications {
   min-height: 500px;
-  background-image: url("/images/jpg/bg_publicationspg.jpg");
+  background-image: url("./images/jpg/bg_publicationspg.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: 0 80px;
