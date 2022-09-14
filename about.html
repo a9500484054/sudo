@@ -28,13 +28,29 @@
             </a>
 
             <nav class="menu header__menu">
-                <ul>
-                    <li><a href="about.html">Компания</a></li>
-                    <li><a href="services.html">Услуги</a></li>
-                    <li><a href="projects.html">Проекты</a></li>
-                    <li><a href="calulations.html">Инструменты</a></li>
-                    <li><a href="career.html">Карьера</a></li>
-                    <li><a href="contacts.html">Контакты</a></li>
+                <button class="menu__close">
+                    <i class="icon-close"></i>
+                </button>
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <a class="menu__link menu__link-list" href="#">Компания</a>
+                        <ul class="menu__list-2">
+                            <li>
+                                <a class="menu__link" href="about.html">О Нас</a>
+                            </li>
+                            <li>
+                                <a class="menu__link" href="publications.html">Публикации</a>
+                            </li>
+                            <li>
+                                <a class="menu__link" href="reviews.html">Отзывы</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu__item"><a class="menu__link" href="services.html">Услуги</a></li>
+                    <li class="menu__item"><a class="menu__link" href="projects.html">Проекты</a></li>
+                    <li class="menu__item"><a class="menu__link" href="calulations.html">Инструменты</a></li>
+                    <li class="menu__item"><a class="menu__link" href="career.html">Карьера</a></li>
+                    <li class="menu__item"><a class="menu__link" href="contacts.html">Контакты</a></li>
                 </ul>
             </nav>
             
@@ -42,30 +58,48 @@
                 <i class="icon-search"></i>
             </button>
 
+            <div class="search">
+                <button class="search__close">
+                    <i class="icon-close"></i>
+                </button>
+                <p class="search__text">Поиск...</p>
+                <label class="search__label">
+                    <input class="search__input" type="text" placeholder="Введите названия">
+                    <button class="search__btn">
+                        <i class="icon-enter"></i>
+                    </button>
+                </label>
+            </div>
         </div>
     </header>
 
-    <main class="about">
+    <main>
 
-        <section class="container mb-140">
-            <div class="block-3-7 career__block">
-                <div>
-                    <h2 class="title-h2 mb-28">О нас</h2>
+        <section class="about">
+            <div class="container">
+                <div class="block-3-7 career__block">
+                    <div>
+                        <h2 class="title-h2 mb-28">О нас</h2>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section class=" mb-140 bg--grey">
-            <div class="container block">
+        <section class="about__work-compain bg--grey">
+            <div class="container block-3-7">
                 <div>
                     <h3 class="title-h3 mb-13">Работа компании</h3>
                 </div>
-                <div class="flex-dest align-items-center-dest justify-content-space-between-dest  pt-25 mb-63">
-                    <p class="text mb-37  ">
+                <div class="flex-dest align-items-center-dest justify-content-space-between-dest mb-63">
+                    <p class="about__work-compain--text mb-37  ">
                         ООО «Судо» – коммерческая IT-компания, основной вид деятельности которой – разработка программных продуктов. Мы специализируемся на разработке высокотехнологичных программ и оптимизации и ускорении сложных математических алгоритмов путём модернизации программных решений и переноса вычислений на более эффективные аппаратные ускорители.
                         Компания занимается разработкой с 2018 года. За это время мы сотрудничали с крупными производственными и научно-производственными компаниями, реализовали несколько крупных проектов в различных областях деятельности, которые подкреплены NDA (соглашение о неразглашении), а также занимались разработкой менее глобальных проектов и программных продуктов. О реализованных проектах вы можете узнать на странице Проекты (ссылка).Команда проекта состоит из квалифицированных разработчиков, имеющих научные достижения и учёные степени: магистры ИТМО, ктн/доцент ИТМО, сотрудник СПбГУ, PhD и профессор зарубежного университета.Основной состав команды сохраняется с момента запуска компании.
-                        Наши ключевые особенности:- Мы осознанно подходим к выбору стека технологий и построению архитектуры, что позволяет нам использовать передовой опыт и оптимизировать будущие расходы на поддержку и развитие наших продуктов. Наши приоритеты в работе: чистый код и качественный продукт. 
+                        Наши ключевые особенности:
+                        <br>
+                        - Мы осознанно подходим к выбору стека технологий и построению архитектуры, что позволяет нам использовать передовой опыт и оптимизировать будущие расходы на поддержку и развитие наших продуктов. Наши приоритеты в работе: чистый код и качественный продукт.
+                        <br>
                         - При создании новых продуктов мы стараемся делать их максимально простыми и удобными как для пользователей, так и для разработчиков. Мы верим, что самые простые решения являются самыми надёжными и эффективными. 
+                        <br>
                         - Перед началом разработки мы тщательно изучаем предметную область. Это даёт нам глубокое понимание нашей задачи и позволяет выполнять работу безукоризненно. 
                     </p>
                     
@@ -73,21 +107,33 @@
             </div>
         </section>
 
-        <section class=" mb-140 ">
-            <div class="container block">
+        <section class="about__experts">
+            <div class="container block-3-7">
                 <div>
                     <h3 class="title-h3 mb-13">Наши специалисты</h3>
                 </div>
-                <div class="flex-dest align-items-center-dest justify-content-space-between-dest  pt-25 mb-63">
-                    <p class="text mb-37  ">
+                <div class="about__experts--block">
+                    <p class="about__experts--text">
                         Команда компании Судо состоит их высококвалифицированных специалистов в области разработки, проектирования и анализа, многие из которых являются научными сотрудниками в ТОПовых ВУЗах страны и имеют учёные степени как в России, так и за рубежом. Мы регулярно участвуем в научных и инженерных исследованиях и в научных мероприятиях, что позволяет поддерживать высокий уровень профессионализма в выполнении работ
                     </p>
-                    <ul class="flex-table">
-                        <li>Около 25 сотрудников трудится в нашей компании</li>
-                        <li>Среди наших специалистов Магистры ИТМО, ктн ИТМО (он же доцент итмо), сотрудник СПбГУ (он же PhD и профессор зарубежного университета)</li>
-                        <li>Рабочее пространство all-inclusive и сплочённый коллектив</li>
+                    <ul class="about__experts--list">
+                        <li class="about__experts--item">Около 25 сотрудников трудится в нашей компании</li>
+                        <li class="about__experts--item">Среди наших специалистов Магистры ИТМО, ктн ИТМО (он же доцент итмо), сотрудник СПбГУ (он же PhD и профессор зарубежного университета)</li>
+                        <li class="about__experts--item">Рабочее пространство all-inclusive и сплочённый коллектив</li>
                     </ul>
                 </div>
+            </div>
+        </section>
+
+        <section class="index-mission">
+            <div class="container index-mission__block">
+                <div class="index-mission__text-animate">
+                    <img class="index-mission__text-animate--1" src="images/svg/text.svg" alt="">
+                    <img class="index-mission__text-animate--2" src="images/png/play.png" alt="">
+                </div>
+                <p class="index-mission__text">
+                    Наша команда – наша ценность, поэтому мы делаем лучшие условия для работы каждого сотрудника. Присоединяйтесь к нашей команде, чтобы заниматься созданием крупных известных проектов и развиваться вместе.
+                </p>
             </div>
         </section>
     </main>
@@ -128,5 +174,6 @@
         </div>
 
     </footer>
+    <script src="js/app.js"></script>
 </body>
 </html>

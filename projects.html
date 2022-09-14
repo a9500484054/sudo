@@ -28,13 +28,29 @@
             </a>
 
             <nav class="menu header__menu">
-                <ul>
-                    <li><a href="about.html">Компания</a></li>
-                    <li><a href="services.html">Услуги</a></li>
-                    <li><a href="projects.html">Проекты</a></li>
-                    <li><a href="calulations.html">Инструменты</a></li>
-                    <li><a href="career.html">Карьера</a></li>
-                    <li><a href="contacts.html">Контакты</a></li>
+                <button class="menu__close">
+                    <i class="icon-close"></i>
+                </button>
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <a class="menu__link menu__link-list" href="#">Компания</a>
+                        <ul class="menu__list-2">
+                            <li>
+                                <a class="menu__link" href="about.html">О Нас</a>
+                            </li>
+                            <li>
+                                <a class="menu__link" href="publications.html">Публикации</a>
+                            </li>
+                            <li>
+                                <a class="menu__link" href="reviews.html">Отзывы</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu__item"><a class="menu__link" href="services.html">Услуги</a></li>
+                    <li class="menu__item"><a class="menu__link" href="projects.html">Проекты</a></li>
+                    <li class="menu__item"><a class="menu__link" href="calulations.html">Инструменты</a></li>
+                    <li class="menu__item"><a class="menu__link" href="career.html">Карьера</a></li>
+                    <li class="menu__item"><a class="menu__link" href="contacts.html">Контакты</a></li>
                 </ul>
             </nav>
             
@@ -42,10 +58,110 @@
                 <i class="icon-search"></i>
             </button>
 
+            <div class="search">
+                <button class="search__close">
+                    <i class="icon-close"></i>
+                </button>
+                <p class="search__text">Поиск...</p>
+                <label class="search__label">
+                    <input class="search__input" type="text" placeholder="Введите названия">
+                    <button class="search__btn">
+                        <i class="icon-enter"></i>
+                    </button>
+                </label>
+            </div>
         </div>
     </header>
 
+    <main class="projects">
 
+        <section class="projects__block-1">
+            <div class="container">
+                <h2 class="projects__block-1--title">Реализованные проекты</h2>
+                <p class="projects__block-1--text-1">Среди наших проектов – большое количество разработок сложных вычислительных программных решений в различных областях деятельности.</p>
+                <p class="projects__block-1--text-2">*Как правило, проекты были подкреплены NDA, поэтому мы можем предоставить только общее описание реализованных проектов.</p>
+            </div>
+        </section>
+
+        <section class="projects__block-2">
+
+        </section>
+
+        <section class="projects__block-3">
+            <div class="projects__block-3--block container">
+                <div class="projects__block-3--block-1">
+                    <h3>Этапы внедрения программного продукта</h3>
+                </div>
+                <div class="projects__block-3--block-2">
+                    <p class="projects__block-3--text">
+                        В зависимости от проекта мы можем передать работу в виде готового сервиса. то есть во может быть даже размещенный на нашем сервере сервис и компания будет платить за поддержку, либо код (чаще всего), но он завернут уже в какой-то установочный файл - установил, запустил, заработало. У нас есть лицензия от майкрософт, поэтому мы можем устанавливать на виндоус свои программы и винда не воспринимает его как вредоносное ПО, у нас есть такой опыт.
+                    </p>
+                    <ul class="projects__block-3--list">
+                        <li class="projects__block-3--item">
+                            <div>01/05</div>
+                            <p>Поступает предложение о работе</p>
+                        </li>
+                        <li class="projects__block-3--item">
+                            <div>02/05</div>
+                            <p>Делается грубое описание, исходя их грубого описания мы делаем расчет трудозатрат, которое потребуется на реализацию проекта.</p>
+                        </li>
+                        <li class="projects__block-3--item">
+                            <div>03/05</div>
+                            <p>Дальше рассчитывается ориентировочная стоимость, если ориентировочная стоимость устраивает, тогда делаем детальное ТЗ, соответственно в ТЗ мы прописываем все детали, корректируем часы и цену, далее если находим общее решение, то соответственно приступаем к работе.</p>
+                        </li>
+                        <li class="projects__block-3--item">
+                            <div>04/05</div>
+                            <p>Работа, как правило, состоит из нескольких этапов.</p>
+                        </li>
+                        <li class="projects__block-3--item">
+                            <div>05/05</div>
+                            <p>Затем тестирование сервиса с высокой нагрузкой</p>
+                        </li>
+                        <li class="projects__block-3--item">
+                            <div>06/05</div>
+                            <p>Если есть необходимость, пишется техническое описание, техническая документация</p>
+                        </li>
+                        <li class="projects__block-3--item">
+                            <div>07/05</div>
+                            <p>Сдаем проект</p>
+                        </li>
+                        <li class="projects__block-3--item">
+                            <div>08/05</div>
+                            <p>Если требуется поддержка, то можем осуществлять поддержку в течение какого-то времени</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="projects__block-4">
+            <div class="container block">
+                <div class="mb-63">
+                    <h3 class="title-h3 mb-28">Хотите предложить сотрудничество или заказать услугу?</h3>
+                    <p class="contacts__text">Заполните форму и наши специалисты свяжутся с вами для обсуждения деталей</p>
+                </div>
+                <div>
+                    <form class="form" action="#">
+                        <input class="form__input" type="text" placeholder="Контактное лицо">
+                        <input class="form__input" type="text" placeholder="Телефон">
+                        <input class="form__input" type="text" placeholder="Email">
+                        <textarea class="form__textarea" placeholder="Описание проекта"></textarea>
+                        <label class="form__checkbox">
+                            <input class="form__input--none" type="checkbox">
+                            <span class="form__checkbox-elem"></span>
+                            <span class="form__checkbox-text">
+                                Нажимая кнопку Отправить, я даю согласие на обработку моих персональных данных и соглашаюсь с <a href="#">Политикой конфиденциальности</a> 
+                            </span>
+                        </label>
+                        <button type="button" class="form__btn btn">
+                            <span>Отправить</span>
+                            <i class="icon-enter"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
 
 
     <footer class="footer">
@@ -82,5 +198,6 @@
         </div>
 
     </footer>
+    <script src="js/app.js"></script>
 </body>
 </html>

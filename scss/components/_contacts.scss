@@ -27,79 +27,12 @@
         color: #171616;
     }
 
-    &__form {
-        display: flex;
-        flex-direction: column;
-
-        input {
-            max-width: 436px;
-            padding: 24px 20px;
-            margin-bottom: 30px;
-            background-color: transparent;
-            border: 1px solid #171616;
-        }
-
-        textarea {
-            max-width: 436px;
-            min-height: 167px;
-            margin-bottom: 39px;
-            padding: 24px 20px;
-            border: 1px solid #171616;
-            background-color: transparent;
-        }
-        label:nth-child(4) {
-            input {
-                display: none;
-            }
-            span {
-                display: flex;
-                max-width: 436px;
-                height: 70px;
-                padding: 24px 20px;
-            }
-        }
-        label:nth-child(5) {
-            display: flex;
-            margin-bottom: 45px;
-            input {
-                display: none;
-            }
-            span, a {
-                max-width: 385px;
-                font-weight: 500;
-                font-size: 14px;
-                line-height: 137%;
-                /* or 19px */
-
-                letter-spacing: 0.02em;
-
-                color: #000000;
-            }
-            a {
-                text-decoration-line: underline;
-            }
-
-        }
-    }
-    &__checkbox {
-        min-width: 20px;
-        margin-right: 21px;
-        height: 20px;
-        border: 1px solid #B0A8A8;
-    }
     &__block-form {
         padding-top: 40px;
         padding-bottom: 64px;
         background: #F7F7F7;
     }
-    &__download {
-        display: block;
-        max-width: 436px;
-        padding: 24px 20px;
-        margin-bottom: 30px;
-        background-color: transparent;
-        border: 1px solid #171616;
-    }
+
 }
 
 

@@ -13,6 +13,8 @@
 @import "./scss/components/reviews";
 @import "./scss/components/contacts";
 @import "./scss/components/publications";
+@import "./scss/components/projects";
+@import "./scss/components/form";
 @import "./scss/components/footer";
 // @import "./scss/components/features";
 // @import "./scss/components/whom";
@@ -90,6 +92,9 @@
     }
     .flex-direction-column-table {
         flex-direction: column;
+    }
+    .mb-table-70 {
+        margin-bottom: 70px;
     }
 }
 @media (min-width: $screen-desktop) {

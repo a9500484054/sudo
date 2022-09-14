@@ -28,13 +28,29 @@
             </a>
 
             <nav class="menu header__menu">
-                <ul>
-                    <li><a href="about.html">Компания</a></li>
-                    <li><a href="services.html">Услуги</a></li>
-                    <li><a href="projects.html">Проекты</a></li>
-                    <li><a href="calulations.html">Инструменты</a></li>
-                    <li><a href="career.html">Карьера</a></li>
-                    <li><a href="contacts.html">Контакты</a></li>
+                <button class="menu__close">
+                    <i class="icon-close"></i>
+                </button>
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <a class="menu__link menu__link-list" href="#">Компания</a>
+                        <ul class="menu__list-2">
+                            <li>
+                                <a class="menu__link" href="about.html">О Нас</a>
+                            </li>
+                            <li>
+                                <a class="menu__link" href="publications.html">Публикации</a>
+                            </li>
+                            <li>
+                                <a class="menu__link" href="reviews.html">Отзывы</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu__item"><a class="menu__link" href="services.html">Услуги</a></li>
+                    <li class="menu__item"><a class="menu__link" href="projects.html">Проекты</a></li>
+                    <li class="menu__item"><a class="menu__link" href="calulations.html">Инструменты</a></li>
+                    <li class="menu__item"><a class="menu__link" href="career.html">Карьера</a></li>
+                    <li class="menu__item"><a class="menu__link" href="contacts.html">Контакты</a></li>
                 </ul>
             </nav>
             
@@ -42,6 +58,18 @@
                 <i class="icon-search"></i>
             </button>
 
+            <div class="search">
+                <button class="search__close">
+                    <i class="icon-close"></i>
+                </button>
+                <p class="search__text">Поиск...</p>
+                <label class="search__label">
+                    <input class="search__input" type="text" placeholder="Введите названия">
+                    <button class="search__btn">
+                        <i class="icon-enter"></i>
+                    </button>
+                </label>
+            </div>
         </div>
     </header>
 
@@ -58,7 +86,7 @@
         </section>
 
         <section class="container">
-            <div class="block-3-7 jc-star mb-28">
+            <div class="block-3-7 jc-star mb-28 mb-table-70">
                 <div class="">
                     <h3 class="title-h3 ">Программист GPU</h3>
                 </div>
@@ -103,28 +131,25 @@
                     <p class="contacts__text">Заполните форму и наши специалисты свяжутся с вами для для ответа на вопросы</p>
                 </div>
                 <div>
-                    <form class="contacts__form" action="#">
-                        <input type="text" placeholder="Вакансия">
-                        <input type="text" placeholder="Имя">
-                        <input type="text" placeholder="Email">
-                        <label>        
-                            <input type="file">
-                            <span class="contacts__download"></span>
+                    <form class="form" action="#">
+                        <input class="form__input" type="text" placeholder="Вакансия">
+                        <input class="form__input" type="text" placeholder="Имя">
+                        <input class="form__input" type="text" placeholder="Email">
+                        <label class="form__download">        
+                            <input class="form__input--none" type="file">
+                            <span class="form__download-elem"></span>
                         </label>
-                        <label>
-                            <input type="checkbox">
-                            <span class="contacts__checkbox"></span>
-                            <span>
+                        <label class="form__checkbox">
+                            <input class="form__input--none" type="checkbox">
+                            <span class="form__checkbox-elem"></span>
+                            <span class="form__checkbox-text">
                                 Нажимая кнопку Отправить, я даю согласие на обработку моих персональных данных и соглашаюсь с <a href="#">Политикой конфиденциальности</a> 
                             </span>
                         </label>
-                        <div class="text">
-                            <button type="button" class="btn">
-                                <span>Отправить</span>
-                                <i class="icon-enter"></i>
-                            </button>
-                        </div>
-
+                        <button type="button" class="form__btn btn">
+                            <span>Отправить</span>
+                            <i class="icon-enter"></i>
+                        </button>
                     </form>
                 </div>
             </div>
@@ -166,5 +191,6 @@
         </div>
 
     </footer>
+    <script src="js/app.js"></script>
 </body>
 </html>

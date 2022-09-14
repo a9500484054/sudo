@@ -130,15 +130,38 @@ input[type="radio"].visually-hidden {
   transition-duration: .5s;
   &:hover,
   &:focus {
-      box-shadow: 12px 8px 0px 0px #000000;
+      box-shadow: 12px 8px 0px 0px #3858E4;
   }
   &:active {
-    background: #000000;
+    background: #3858E4;
     color: #FFF;
-    box-shadow: 0px 0px 0px 0px #000000;
+    border: 1px solid #3858E4;
+    box-shadow: 0px 0px 0px 0px #3858E4;
   }
   &:active span{
-  color: #FFF;
+    color: #FFF;
+  }
+}
+
+.btn--white {
+  border: 1px solid #ffffff;
+  span {
+    color: #ffffff;
+  }
+  i {
+    color: #ffffff;
+  }
+  &:hover,
+  &:focus {
+      box-shadow: 12px 8px 0px 0px #ffffff;
+  }
+  &:active {
+    background: #ffffff;
+    color: #FFF;
+    box-shadow: 0px 0px 0px 0px #ffffff;
+  }
+  &:active span{
+    color: #000;
   }
 }
 
@@ -177,7 +200,7 @@ input[type="radio"].visually-hidden {
 
   
   
-  @media (min-width: $screen-desktop) {
+@media (min-width: $screen-desktop) {
 
   }
   

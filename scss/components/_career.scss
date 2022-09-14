@@ -51,7 +51,15 @@
     
     
 @media (min-width: $screen-desktop) {
-
+    .career {
+        &__box {
+            display: flex;
+            flex-direction: row;
+            ul:first-child {
+                margin-right: 40px;
+            }
+        }
+    }
 }
 
 .jc-sta div:first-child {

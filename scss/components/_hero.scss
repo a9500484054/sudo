@@ -108,6 +108,16 @@
 
         background: #3858E4;
         border-radius: 50%;
+        transition-duration: .5s;
+        &:hover,
+        &:focus {
+            background: #fff;
+            color: #3858E4;
+        }
+        &:active {
+            color: #fff;
+            background: #3858E4;
+        }
     }
     &--color-text p,
     &--color-text span {
@@ -269,7 +279,7 @@
 
 @media (min-width: $screen-desktop) {
     .index-benefits {
-        background-size: 952px 380px;
+        background-size: 65% 380px;
         background-position: 100% 0;
         &__block {
             display: flex;
@@ -296,5 +306,208 @@
         }
         
     
+    }
+}
+
+.index-services {
+    background-color:#ffffff;
+    h3 {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 120%;
+        /* identical to box height, or 29px */
+
+        letter-spacing: 0.02em;
+
+        color: #171616;
+    }
+    &__block {
+        padding: 50px 15px 336px;
+    }
+    &__block-1 {
+        margin-bottom: 93px;
+    }
+    &__block-2 {
+
+    }   
+}
+
+@media (min-width: $screen-table) {
+    .index-services {
+        h3 {
+            font-size: 44px;
+        }
+        &__block {
+            display: flex;
+        }
+        &__block-1 {
+            flex-basis: 50%;
+        }
+        &__block-2 {
+            flex-basis: 50%;
+            padding-top: 145px;
+        }   
+    }
+}
+@media (min-width: $screen-desktop) {
+    .index-services {
+
+        &__block {
+
+        }
+        &__block-1 {
+        }
+        &__block-2 {
+    
+        }   
+    }
+}
+
+
+.services-block {
+    
+    &__nav {
+        display: flex;
+        margin-bottom: 20px;
+        justify-content: flex-end;
+        button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-width: 30px;
+            min-height: 30px;
+        }
+    }
+    &__nav-btn-r {
+        i {
+            transform: rotate(180deg);
+        }
+    }
+    &__progess {
+        position: relative;
+        width: 100%;
+        height: 3px;
+        margin-bottom: 34px;
+
+        background-color: #B1B1B1;
+        span {
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: inline-block;
+            width: 33%;
+            height: 3px;
+            background-color: #000000;
+        }
+    }
+    &__list {
+        position: relative;
+    }   
+    &__item {
+        position: absolute;
+        top: 0;
+        left: 0;
+        h4 {
+            margin-bottom: 18px;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 120%;
+            letter-spacing: 0.02em;
+            color: #171616;
+        }
+        p {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 137%;
+            letter-spacing: 0.02em;
+            color: #171616;
+        }
+
+    }
+    &__item:nth-child(1) {
+        opacity: 1;
+    }   
+    &__item:nth-child(2) {
+        opacity: 0;
+    }   
+    &__item:nth-child(3) {
+        opacity: 0;
+    }   
+}
+
+@media (min-width: $screen-table) {
+    .services-block {  
+        &__item {
+            h4 {
+                font-size: 28px;
+            }
+    
+        } 
+    }
+}
+@media (min-width: $screen-desktop) {
+
+}
+
+.index-mission {
+    padding-bottom: 290px;
+    margin-bottom: 141px;
+    background-color: #0A30D6;
+    background-image: url('./images/jpg/bg_main-6.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 0px 616px;
+    &__block {
+    }
+    &__text-animate {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 332px;
+        height: 332px;
+        margin-bottom: 27px;
+        &--1 {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    }
+    &__text {
+        max-width: 575px;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 137%;
+        letter-spacing: 0.02em;
+        color: #FFFFFF;
+    }
+}
+
+
+@media (min-width: $screen-table) {
+    .index-mission {
+        margin-bottom: 207px;
+        &__block {
+        }
+        &__block-1 {
+        }
+        &__block-2 {
+        }
+        &__text {
+            font-size: 24px;
+        }
+    }
+}
+@media (min-width: $screen-desktop) {
+    .index-mission {
+        padding-bottom: 126px;
+        background-size: 700px 553px;
+        background-position: 100% 86px;
+        &__block {
+        }
+        &__block-1 {
+        }
+        &__block-2 {
+        }
     }
 }

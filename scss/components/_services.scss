@@ -11,6 +11,9 @@
             flex-direction: column;
             min-height: 505px;
         }
+        h2 {
+            margin-top: 34px;
+        }
     }
     &__text {
         max-width: 406px;
@@ -36,7 +39,7 @@
     .services {
         // background-size: 952px 505px;
         background-position: 0 0;
-        background-size: 100%;
+        background-size: 100% 501px;
         &__block {
             div:first-child {
                 flex-basis: 30%;
@@ -48,7 +51,7 @@
             }
         }
         &__text {
-            max-width: 1000px;
+            max-width: 740px;
         }
     }
 }
@@ -71,7 +74,7 @@
     &__item {
         position: relative;
         max-width: 446px;
-        height: 446px;
+        // height: 446px;
         margin-bottom: 20px;
         &:hover > .services__info{
             opacity: 1;
@@ -129,13 +132,13 @@
         &__list {
             display: flex;
             flex-direction: row;
-            justify-content: center;
+            justify-content: space-between;
             // align-items: center;
         }
         &__item {
             position: relative;
             max-width: 446px;
-            height: 446px;
+            // height: 446px;
             margin-bottom: 20px;
             &:hover > .services__info{
                 opacity: 1;
@@ -168,7 +171,7 @@
         &__item {
             position: relative;
             max-width: 446px;
-            height: 446px;
+            // height: 446px;
             margin-bottom: 20px;
             &:hover > .services__info{
                 opacity: 1;
