@@ -183,3 +183,86 @@
 @media (min-width: $screen-desktop) {
 
 }
+
+.projects__container {  
+    display: flex;
+    flex-direction: column;
+}
+.projects-card {
+    position: relative;
+    transition-duration: .5s;
+    background-color: #F4F5F8;
+    &:hover > &__info{
+        opacity: 1;
+        background: rgba(56, 88, 228, 0.9);
+    }
+    &:hover > &__title {
+        opacity: 0;
+    }
+    &__img {
+        width: 100%;
+    }
+    &__title {
+        position: absolute;
+        top: 50px;
+        left: 30px;
+        max-width: 400px;
+        transition-duration: .5s;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 137%;
+        /* or 27px */
+
+        letter-spacing: 0.02em;
+
+        color: #171616;
+
+    }
+    &__info {
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 20px;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        transition-duration: .5s;
+        p {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 137%;
+            letter-spacing: 0.02em;
+            color: #FFFFFF;
+        }
+    }
+}
+
+@media (min-width: $screen-table) {
+
+    .projects__container {  
+        display: grid; 
+        grid-template-columns: 1fr 1fr 1fr; 
+        grid-template-rows: 1fr 1fr; 
+        gap: 0px 0px; 
+        grid-template-areas: 
+          ". . ."
+          ". . .";
+      }
+      
+    //   .block-1 { grid-area: block-1; }
+      
+    //   .block-2 { grid-area: block-2; }
+      
+    //   .block-3 { grid-area: block-3; }
+      
+    //   .block-4 { grid-area: block-4; }
+      
+    //   .block-5 { grid-area: block-5; }
+      
+    //   .block-6 { grid-area: block-6; }
+      
+    //   .block-7 { grid-area: block-7; }
+      
+}
+
+

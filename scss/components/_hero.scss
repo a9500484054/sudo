@@ -395,6 +395,7 @@
         margin-bottom: 34px;
 
         background-color: #B1B1B1;
+        transition-duration: .5s;
         span {
             position: absolute;
             top: 0;
@@ -403,6 +404,7 @@
             width: 33%;
             height: 3px;
             background-color: #000000;
+            transition-duration: .5s;
         }
     }
     &__list {
@@ -412,6 +414,8 @@
         position: absolute;
         top: 0;
         left: 0;
+        opacity: 0;
+        transition-duration: .5s;
         h4 {
             margin-bottom: 18px;
             font-weight: 700;
@@ -429,15 +433,9 @@
         }
 
     }
-    &__item:nth-child(1) {
+    &__item--active {
         opacity: 1;
-    }   
-    &__item:nth-child(2) {
-        opacity: 0;
-    }   
-    &__item:nth-child(3) {
-        opacity: 0;
-    }   
+    } 
 }
 
 @media (min-width: $screen-table) {

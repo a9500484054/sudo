@@ -42,21 +42,41 @@ document.addEventListener('DOMContentLoaded', () => {
         modalFeedback.classList.remove('modal-feedback--active')
     })
 
-    // const servicesBlockNavBtnLeft = document.querySelector('.services-block__nav-btn-l')
-    // const servicesBlockNavBtnRight = document.querySelector('.services-block__nav-btn-r')
-    // const servicesBlockItem = document.querySelectorAll('.services-block__item')
-    // const servicesBlockProgess = document.querySelector('.services-block__progess--elem')
+    const servicesBlockNavBtnLeft = document.querySelector('.services-block__nav-btn-l')
+    const servicesBlockNavBtnRight = document.querySelector('.services-block__nav-btn-r')
+    const servicesBlockItem = document.querySelectorAll('.services-block__item')
+    const servicesBlockProgess = document.querySelector('.services-block__progess--elem')
+    let count = 0
+    let positionElement = 0
 
+    let i = 100/servicesBlockItem.length
+    console.log(i)
 
-    // console.log(100/servicesBlockItem.length)
+    servicesBlockProgess.style.width = i + '%'
+    
+    servicesBlockNavBtnRight.addEventListener('click', () => {
+        count++
+        positionElement += i
+        servicesBlockNavBtnLeft.removeAttribute('disabled');
+        if(count == servicesBlockItem.length - 1) {
+            servicesBlockNavBtnRight.setAttribute('disabled', false);
+        }
+        servicesBlockProgess.style.left = positionElement + "%"
+        servicesBlockItem.forEach(el => el.classList.remove('services-block__item--active'))
+        servicesBlockItem[count].classList.add('services-block__item--active')
+    })
 
-    // servicesBlockNavBtnRight.addEventListener('click', () => {
-    //     servicesBlockProgess.style.right = 100/servicesBlockItem.length + '%'
-        
-    // })
+    servicesBlockNavBtnLeft.addEventListener('click', () => {
+        count--
+        positionElement -= i
+        servicesBlockNavBtnRight.removeAttribute('disabled');
+        if(count == 0) {
+            servicesBlockNavBtnLeft.setAttribute('disabled', true);
+        }
+        servicesBlockProgess.style.left = positionElement + "%"
+        servicesBlockItem.forEach(el => el.classList.remove('services-block__item--active'))
+        servicesBlockItem[count].classList.add('services-block__item--active')
+    })
 
-    // servicesBlockNavBtnLeft.addEventListener('click', () => {
-    //     servicesBlockProgess.style.left = 100/servicesBlockItem.length + '%'
-    // })
 
 });
