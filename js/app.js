@@ -15,7 +15,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     })
 
-
     const menuLinkLlist = document.querySelector('.menu__link-list')
     const menuList2 = document.querySelector('.menu__list-2')
 
@@ -24,22 +23,40 @@ document.addEventListener('DOMContentLoaded', () => {
     })
 
     
+    const indexBlockBbtn = document.querySelectorAll('.index-block__btn')
+    const modalFeedback = document.querySelector('.modal-feedback')
+    const modalFeedbackClose = document.querySelector('.modal-feedback__close')
 
-    const servicesBlockNavBtnLeft = document.querySelector('.services-block__nav-btn-l')
-    const servicesBlockNavBtnRight = document.querySelector('.services-block__nav-btn-r')
-    const servicesBlockItem = document.querySelectorAll('.services-block__item')
-    const servicesBlockProgess = document.querySelector('.services-block__progess--elem')
+    indexBlockBbtn.forEach(function(event) {
+        event.addEventListener('click', function(event) {
+            modalFeedback.classList.add('modal-feedback--active')
+
+            modalFeedback.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            })
+        })
+    })
+
+    modalFeedbackClose.addEventListener('click', () => {
+        modalFeedback.classList.remove('modal-feedback--active')
+    })
+
+    // const servicesBlockNavBtnLeft = document.querySelector('.services-block__nav-btn-l')
+    // const servicesBlockNavBtnRight = document.querySelector('.services-block__nav-btn-r')
+    // const servicesBlockItem = document.querySelectorAll('.services-block__item')
+    // const servicesBlockProgess = document.querySelector('.services-block__progess--elem')
 
 
-    console.log(100/servicesBlockItem.length)
+    // console.log(100/servicesBlockItem.length)
 
-    servicesBlockNavBtnRight.addEventListener('click', () => {
-        servicesBlockProgess.style.right = 100/servicesBlockItem.length + '%'
+    // servicesBlockNavBtnRight.addEventListener('click', () => {
+    //     servicesBlockProgess.style.right = 100/servicesBlockItem.length + '%'
         
-    })
+    // })
 
-    servicesBlockNavBtnLeft.addEventListener('click', () => {
-        servicesBlockProgess.style.left = 100/servicesBlockItem.length + '%'
-    })
+    // servicesBlockNavBtnLeft.addEventListener('click', () => {
+    //     servicesBlockProgess.style.left = 100/servicesBlockItem.length + '%'
+    // })
 
 });
