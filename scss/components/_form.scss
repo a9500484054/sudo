@@ -68,6 +68,7 @@
         }
     }
     &__download {
+        position: relative;
         display: block;
         max-width: 436px;
         padding: 24px 20px;
@@ -75,6 +76,33 @@
         background-color: transparent;
         border: 1px solid #171616;
         cursor: pointer;
+        &::before {
+            content: "Ваше резюме";
+    
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 137%;
+            /* identical to box height, or 22px */
+            
+            letter-spacing: 0.02em;
+            
+            color: #777070;
+        }
+        &::after {
+            content: "";
+    
+            position: absolute;
+            top: 22px;
+            right: 29px;
+
+            display: block;
+            width: 24px;
+            height: 24px;
+    
+            background-image: url('./images/svg/donwload.svg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
     }
     &__btn {
 

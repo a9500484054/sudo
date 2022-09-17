@@ -87,11 +87,18 @@
         letter-spacing: 0.02em;
         color: #FFFFFF;
     }
-    button {
+    &__btn-box {
         display: flex;
         justify-content: center;
         align-items: center;
-
+        width: 218px;
+        height: 218px;
+    }
+    &__btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-sizing: content-box;
 
         width: 178px;
         height: 178px;
@@ -111,12 +118,10 @@
         transition-duration: .5s;
         &:hover,
         &:focus {
-            background: #fff;
-            color: #3858E4;
+            padding: 20px;
         }
         &:active {
-            color: #fff;
-            background: #3858E4;
+            padding: 20px;    
         }
     }
     &--color-text p,
