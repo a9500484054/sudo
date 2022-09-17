@@ -28,5 +28,21 @@ document.addEventListener('DOMContentLoaded', () => {
         bodyElement.style.overflow = "auto"
     })
 
+    const servicesBlockNavBtnLeft = document.querySelector('.services-block__nav-btn-l')
+    const servicesBlockNavBtnRight = document.querySelector('.services-block__nav-btn-r')
+    const servicesBlockItem = document.querySelectorAll('.services-block__item')
+    const servicesBlockProgess = document.querySelector('.services-block__progess--elem')
+
+
+    console.log(100/servicesBlockItem.length)
+
+    servicesBlockNavBtnRight.addEventListener('click', () => {
+        servicesBlockProgess.style.right = 100/servicesBlockItem.length + '%'
+        
+    })
+
+    servicesBlockNavBtnLeft.addEventListener('click', () => {
+        servicesBlockProgess.style.left = 100/servicesBlockItem.length + '%'
+    })
 
 });

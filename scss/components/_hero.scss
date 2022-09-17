@@ -464,13 +464,17 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 332px;
-        height: 332px;
+        width: 217px;
+        height: 217px;
         margin-bottom: 27px;
         &--1 {
             position: absolute;
             top: 0;
             left: 0;
+            z-index: 1;
+        }
+        &--2 {
+            z-index: 222;
         }
     }
     &__text {
@@ -489,7 +493,9 @@
         margin-bottom: 207px;
         &__block {
         }
-        &__block-1 {
+        &__text-animate {
+            width: 332px;
+            height: 332px;
         }
         &__block-2 {
         }
@@ -511,3 +517,4 @@
         }
     }
 }
+

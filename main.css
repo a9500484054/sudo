@@ -674,9 +674,6 @@ input[type="radio"].visually-hidden {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .menu__list-2 li {
@@ -1425,8 +1422,8 @@ input[type="radio"].visually-hidden {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 332px;
-  height: 332px;
+  width: 217px;
+  height: 217px;
   margin-bottom: 27px;
 }
 
@@ -1434,6 +1431,11 @@ input[type="radio"].visually-hidden {
   position: absolute;
   top: 0;
   left: 0;
+  z-index: 1;
+}
+
+.index-mission__text-animate--2 {
+  z-index: 222;
 }
 
 .index-mission__text {
@@ -1448,6 +1450,10 @@ input[type="radio"].visually-hidden {
 @media (min-width: 768px) {
   .index-mission {
     margin-bottom: 207px;
+  }
+  .index-mission__text-animate {
+    width: 332px;
+    height: 332px;
   }
   .index-mission__text {
     font-size: 24px;
