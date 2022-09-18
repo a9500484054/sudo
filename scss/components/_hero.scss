@@ -1,12 +1,14 @@
 .hero {
+    
     background-image: url('./images/jpg/bg_main-1.jpg');
     background-size: 1287px;
     background-repeat: no-repeat;
-    padding: 100px 0;
+    padding: 140px 0;
     min-height: 582px;
     
 
     &__wrap {
+        position: relative;
         max-width: 1440px;
         margin: 0 auto;
         width: 100%;
@@ -15,10 +17,36 @@
         max-width: 420px;
         padding-left: 16px;
         font-weight: 700;
-        font-size: 24px;
+        font-size: 28px;
         line-height: 104.5%;
         letter-spacing: 0.03em;
         color: #FFFFFF;
+    }
+    &__elem {
+        position: absolute;
+        bottom: -285px;
+        left: 23px;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 120%;
+        /* or 14px */
+
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+
+        color: #FFFFFF;
+        &::before {
+            content: "";
+    
+            position: absolute;
+            bottom: 2px;
+            left: -9px;        
+            display: block;
+            width: 2px;
+            height: 128px;
+    
+            background-color: #ffffff;
+        }
     }
 }
 
@@ -30,6 +58,10 @@
             padding-top: 40px;
             max-width: 700px;
             font-size: 38px;
+        }
+        &__elem {
+            bottom: -210px;
+            left: 23px;
         }
     }
 
@@ -459,7 +491,7 @@
     background-image: url('./images/jpg/bg_main-6.jpg');
     background-repeat: no-repeat;
     background-size: 100%;
-    background-position: 0px 616px;
+    background-position: 0px 528px;
     &__block {
     }
     &__text-animate {
@@ -494,6 +526,7 @@
 @media (min-width: $screen-table) {
     .index-mission {
         margin-bottom: 207px;
+        background-position: 0px 600px;
         &__block {
         }
         &__text-animate {
