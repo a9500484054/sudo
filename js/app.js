@@ -11,9 +11,12 @@ document.addEventListener('DOMContentLoaded', () => {
         menu.classList.toggle('menu--active')
         menuBtn.classList.toggle('menu-btn--active')
         bodyElement.classList.toggle('overflow')
-        
-
     })
+
+    searchBtn.addEventListener('click', () => {
+        search.classList.toggle('search--active')
+    })
+
 
     const menuLinkLlist = document.querySelector('.menu__link-list')
     const menuList2 = document.querySelector('.menu__list-2')

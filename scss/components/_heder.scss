@@ -221,19 +221,19 @@
     top: -4000px;
     left: 0px;
     width: 100%;
-    height: 100vh;
+    height: 50px;
     background-color: #171616;
     display: flex;
     justify-content: center;
     align-items: center;
     &--active {
-        top: 0;
+        top: 57px;
     }
     &__close {
         position: absolute;
         top: 40px;
         right: 40px;
-        
+        display: none;
         &:hover i,
         &:focus i{
             color: #2b5dff;
@@ -248,6 +248,7 @@
         }
     }
     &__text {
+        display: none;
         position: absolute;
         top: 224px;
         left: 50%;
@@ -258,15 +259,18 @@
     &__label {
         position: relative;
         width: 80%;
-        box-shadow: 11px 11px 0px 0px #000000;
     }
     &__input {
-        padding: 20px 25px;
+        padding: 10px 15px;
         width: 100%;
-        height: 40px;
+        height: 30px;
+        background-color: #171616;
+        border-bottom: 1px solid #fff;
+        color: #fff;
     }
     &__btn {
         position: absolute;
+        display: none;
         right: 0;
         top: 0;
         width: 40px;

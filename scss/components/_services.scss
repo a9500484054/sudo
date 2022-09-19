@@ -80,6 +80,9 @@
             opacity: 1;
             background: rgba(56, 88, 228, 0.9);
         }
+        &:hover > .projects-card__title {
+            opacity: 0;
+        }
     }
     &__img-2 {
         max-width: 800px;
