@@ -2629,6 +2629,41 @@ input[type="radio"].visually-hidden {
     -ms-grid-column-span: 2;
     grid-area: block-7;
   }
+  .container--test {
+    display: -ms-grid;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-rows: 1fr;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    gap: 2px 2px;
+        grid-template-areas: "block-1 block-1 block-2 block-2" "block-1 block-1 block-3 block-4";
+  }
+  .container--test .block-2 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 2;
+    grid-area: block-2;
+  }
+  .container--test .block-1 {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: block-1;
+  }
+  .container--test .block-3 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 3;
+    grid-area: block-3;
+  }
+  .container--test .block-4 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 4;
+    grid-area: block-4;
+  }
 }
 
 .projects__container--test {
