@@ -2786,6 +2786,41 @@ input[type="radio"].visually-hidden {
   }
 }
 
+.block-1 {
+  background-image: url("./images/svg/bg-1.svg");
+  background-repeat: no-repeat;
+}
+
+.block-2 {
+  background-image: url("./images/svg/bg-2.svg");
+  background-repeat: no-repeat;
+}
+
+.block-3 {
+  background-image: url("./images/svg/bg-3.svg");
+  background-repeat: no-repeat;
+}
+
+.block-4 {
+  background-image: url("./images/svg/bg-4.svg");
+  background-repeat: no-repeat;
+}
+
+.block-5 {
+  background-image: url("./images/svg/bg-5.svg");
+  background-repeat: no-repeat;
+}
+
+.block-6 {
+  background-image: url("./images/svg/bg-6.svg");
+  background-repeat: no-repeat;
+}
+
+.block-7 {
+  background-image: url("./images/svg/bg-7.svg");
+  background-repeat: no-repeat;
+}
+
 .form {
   display: -webkit-box;
   display: -ms-flexbox;
