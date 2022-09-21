@@ -189,14 +189,22 @@
     flex-direction: column;
     margin-bottom: 50px;
 }
+.projects__container--test {  
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
 .projects-card {
     position: relative;
     transition-duration: .5s;
     background-color: #F4F5F8;
+    &:focus > &__info,
     &:hover > &__info{
         opacity: 1;
         background: rgba(56, 88, 228, 0.9);
     }
+    &:focus > &__title,
     &:hover > &__title {
         opacity: 0;
     }
@@ -268,34 +276,35 @@
            
     .block-7 { grid-area: block-7; }
     
-    .container--test {
-        display: grid; 
-        grid-auto-flow: column; 
-        grid-auto-rows: 1fr; 
-        grid-template-columns: 1fr 1fr 1fr 1fr; 
-        grid-template-rows: 1fr 1fr; 
-        gap: 2px 2px; 
-        grid-template-areas: 
-          "block-1 block-1 block-2 block-2"
-          "block-1 block-1 block-3 block-4"; 
+    // .container--test {
+    //     display: grid; 
+    //     grid-auto-flow: column; 
+    //     grid-auto-rows: 1fr; 
+    //     grid-template-columns: 1fr 1fr 1fr 1fr; 
+    //     grid-template-rows: 1fr 1fr; 
+    //     gap: 2px 2px; 
+    //     grid-template-areas: 
+    //       "block-1 block-1 block-2 block-2"
+    //       "block-1 block-1 block-3 block-4"; 
 
-        .block-2 { grid-area: block-2; }
-        .block-1 { grid-area: block-1; }
-        .block-3 { grid-area: block-3; }
-        .block-4 { grid-area: block-4; }
-        }
+    //     .block-2 { grid-area: block-2; }
+    //     .block-1 { grid-area: block-1; }
+    //     .block-3 { grid-area: block-3; }
+    //     .block-4 { grid-area: block-4; }
+    //     }
       
     
 
 
-}
-.projects__container--test {
-display: flex;
-flex-wrap: wrap;
-margin-bottom: 140px;
-div {
-    flex-basis: 50%;
-}
+    .projects__container--test {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        margin-bottom: 140px;
+        div {
+            flex-basis: 50%;
+        }
+    }
 }
 
 @media (min-width: $screen-desktop) {

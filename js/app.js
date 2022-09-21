@@ -28,20 +28,6 @@ document.addEventListener('DOMContentLoaded', () => {
     })
 
     
-    const indexBlockBbtn = document.querySelectorAll('.index-block__btn')
-    const modalFeedback = document.querySelector('.modal-feedback')
-    
-
-    indexBlockBbtn.forEach(function(event) {
-        event.addEventListener('click', function(event) {
-            modalFeedback.classList.add('modal-feedback--active')
-
-            modalFeedback.scrollIntoView({
-                behavior: 'smooth',
-                block: 'start'
-            })
-        })
-    })
 
 
 

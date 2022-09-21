@@ -272,7 +272,25 @@
 
     <script src="js/app.js"></script>
     <script>
-            const modalFeedbackClose = document.querySelector('.modal-feedback__close')
+
+    const indexBlockBbtn = document.querySelectorAll('.index-block__btn')
+        const modalFeedback = document.querySelector('.modal-feedback')
+        
+
+        indexBlockBbtn.forEach(function(event) {
+            event.addEventListener('click', function(event) {
+                modalFeedback.classList.add('modal-feedback--active')
+
+                modalFeedback.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                })
+            })
+        })
+
+
+    const modalFeedbackClose = document.querySelector('.modal-feedback__close')
+
     modalFeedbackClose.addEventListener('click', () => {
         modalFeedback.classList.remove('modal-feedback--active')
     })

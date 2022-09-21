@@ -2544,6 +2544,17 @@ input[type="radio"].visually-hidden {
   margin-bottom: 50px;
 }
 
+.projects__container--test {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 50px;
+}
+
 .projects-card {
   position: relative;
   -webkit-transition-duration: .5s;
@@ -2551,11 +2562,13 @@ input[type="radio"].visually-hidden {
   background-color: #F4F5F8;
 }
 
+.projects-card:focus > .projects-card__info,
 .projects-card:hover > .projects-card__info {
   opacity: 1;
   background: rgba(56, 88, 228, 0.9);
 }
 
+.projects-card:focus > .projects-card__title,
 .projects-card:hover > .projects-card__title {
   opacity: 0;
 }
@@ -2629,55 +2642,22 @@ input[type="radio"].visually-hidden {
     -ms-grid-column-span: 2;
     grid-area: block-7;
   }
-  .container--test {
-    display: -ms-grid;
-    display: grid;
-    grid-auto-flow: column;
-    grid-auto-rows: 1fr;
-    -ms-grid-columns: 1fr 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-    -ms-grid-rows: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-    gap: 2px 2px;
-        grid-template-areas: "block-1 block-1 block-2 block-2" "block-1 block-1 block-3 block-4";
+  .projects__container--test {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-bottom: 140px;
   }
-  .container--test .block-2 {
-    -ms-grid-row: 1;
-    -ms-grid-column: 3;
-    -ms-grid-column-span: 2;
-    grid-area: block-2;
+  .projects__container--test div {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
   }
-  .container--test .block-1 {
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 2;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 2;
-    grid-area: block-1;
-  }
-  .container--test .block-3 {
-    -ms-grid-row: 2;
-    -ms-grid-column: 3;
-    grid-area: block-3;
-  }
-  .container--test .block-4 {
-    -ms-grid-row: 2;
-    -ms-grid-column: 4;
-    grid-area: block-4;
-  }
-}
-
-.projects__container--test {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin-bottom: 140px;
-}
-
-.projects__container--test div {
-  -ms-flex-preferred-size: 50%;
-      flex-basis: 50%;
 }
 
 @media (min-width: 1280px) {
