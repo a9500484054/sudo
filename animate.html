@@ -297,12 +297,13 @@
         qr.from('.title-c', {opacity: 0, y: 25, duration: 0.7})
         qr.from('.hero__el', {opacity: 0, y: 25, duration: 0.7})
         qr.from('.hero__el--arrow', {height: 0, y: 25, duration: 1 ,ease: "bounce.out"})
+        qr.from('.index-about', {x: '0', y: '+100%',  duration: 1})
         // qr.from('.index-about__btn', {opacity: 0, y: 200, duration: 2})
         
 
 
         const tl = gsap.timeline();
-        tl.fromTo('.index-about', {x: '0', y: '+100%'}, {x: 0, y: '-100%'})
+        // tl.fromTo('.index-about', {x: '0', y: '+100%'}, {x: 0, y: '-100%'})
         tl.fromTo('.index-block--1', {x: '0', y: '+100%'}, {x: 0, y: '-100%'})
         tl.fromTo('.index-block--2', {x: '0', y: '+100%'}, {x: 0, y: '-100%'})
         tl.fromTo('.index-block--3', {x: '0', y: '+100%'}, {x: 0, y: '-100%'})
